@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>DevSkill Registrazione</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<form [formGroup]="registrazioneForm">
+  <ion-grid class="set-grid">
+    <ion-row  class="ion-text-center">
+  <ion-col>
+    <app-titolo-devskill testologo="Registrati."></app-titolo-devskill>
+  </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+    <ion-grid class="set-grid">
+      
+
+    <ion-row  class="ion-text-center" size="4">
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-item>
+      <ion-label size="4px" for="uname" position="floating"> Username</ion-label>
+      <ion-input formControlName="username"></ion-input>
+      <ion-icon slot="end" name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label size="4" for= "mail" position="floating"> Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+        <ion-icon slot="end" ion name="mail-outline"></ion-icon>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label size="4" for="password" position="floating">Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+        <ion-icon slot="end" name="lock-closed-outline"></ion-icon>
+        
+
+      </ion-item>
+      <app-bottone-custom testo="Registrati"></app-bottone-custom>
+      </ion-col>
+      <ion-col> 
+
+      </ion-col>
+      </ion-row>
+      </ion-grid>
+    
+ 
+ </form>
+</ion-content>
